@@ -28,7 +28,7 @@ spec:
         app: helloserver
     spec:
       imagePullSecrets:
-      - name: pipeline-docker-registry
+      - name: ali-registry
       containers:
       - name: helloserver
         image: divernia/test-go:${CICD_EXECUTION_SEQUENCE}
